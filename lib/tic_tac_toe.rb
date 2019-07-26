@@ -93,7 +93,18 @@ WIN_COMBINATIONS = [
       end
     end
 
+    def play
+      while over?
+        turn
+      end
+      if winner?
+        puts "Congratulations #{winner}!"
+      else
+        puts "Cat's Game!"
+      end
 
+
+    end
 
 
 end
