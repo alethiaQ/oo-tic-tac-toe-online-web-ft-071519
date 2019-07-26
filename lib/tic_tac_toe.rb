@@ -97,7 +97,7 @@ WIN_COMBINATIONS = [
       while !over?
         turn
       end
-      if winner?
+      if winner
         puts "Congratulations #{winner}!"
       else
         puts "Cat's Game!"
